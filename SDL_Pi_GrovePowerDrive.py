@@ -15,9 +15,9 @@ GrovePowerDrive_Default_GPIO_Pin_Sig2 = 21
 
 class SDL_Pi_GrovePowerDrive:
 	
-	def __init__(self, GPIOPinSig1=GrovePowerDrive_Default_GPIO_Pin_Sig1, GPIOPinSig2=GrovePowerDrive_Default_GPI_Pin_Sig2,  initialStateSig1 = True, intialStateSig2):
-                self._GPIOPin = GPIOPinSig1
-                self._GPIOPin = GPIOPinSig2
+	def __init__(self, GPIOPinSig1=GrovePowerDrive_Default_GPIO_Pin_Sig1, GPIOPinSig2=GrovePowerDrive_Default_GPIO_Pin_Sig2,  initialStateSig1 = True, initialStateSig2 = True):
+                self._GPIOPinSig1 = GPIOPinSig1
+                self._GPIOPinSig2 = GPIOPinSig2
 
                 self._initialStateSig1 = initialStateSig1
                 self._initialStateSig2 = initialStateSig2
