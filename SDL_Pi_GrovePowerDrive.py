@@ -34,7 +34,7 @@ class SDL_Pi_GrovePowerDrive:
 		if (sigvalue == 2):
 			GPIO.output(self._GPIOPinSig2, True)
 
-	def turnOffPowerDrive(self):
+	def turnOffPowerDrive(self, sigvalue):
 
 		if (sigvalue == 1):
 			GPIO.output(self._GPIOPinSig1, False)
