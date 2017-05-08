@@ -7,6 +7,8 @@ Run example.py to test a GrovePowerDrive connected to D4.
 
 More information on store.switchdoc.com
 
+May 8, 2017:  Version 1.1 - Merged Interface type with GrovePowerSave
+
 May 2, 2017:  Version 1.0
 
 

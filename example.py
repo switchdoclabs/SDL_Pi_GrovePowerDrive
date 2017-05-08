@@ -20,21 +20,21 @@ GPIO_Pin_PowerDrive_Sig2 = 5
 myPowerDrive = SDL_Pi_GrovePowerDrive.SDL_Pi_GrovePowerDrive(GPIO_Pin_PowerDrive_Sig1, GPIO_Pin_PowerDrive_Sig2, True, True)
 	
 print "turning Pin %i off" % GPIO_Pin_PowerDrive_Sig1
-myPowerDrive.turnOffPowerDrive(1)
+myPowerDrive.setPowerDrive(1, False)
 
 time.sleep(60)
 
-myPowerDrive.turnOffPowerDrive(2)
+myPowerDrive.setPowerDrive(2, False)
 
 print "turning Pin %i off" % GPIO_Pin_PowerDrive_Sig2
 
 time.sleep(60)
 
 print "turning Pin %i on" % GPIO_Pin_PowerDrive_Sig1
-myPowerDrive.turnOffPowerDrive(1)
+myPowerDrive.setPowerDrive(1, True)
 
-print "turning Pin %i off" % GPIO_Pin_PowerDrive_Sig2
-myPowerDrive.turnOffPowerDrive(2)
+print "turning Pin %i on" % GPIO_Pin_PowerDrive_Sig2
+myPowerDrive.setPowerDrive(2, True)
 
 
 

@@ -27,19 +27,12 @@ class SDL_Pi_GrovePowerDrive:
 		GPIO.setup(self._GPIOPinSig1,GPIO.OUT, initial=self._initialStateSig1)
 		GPIO.setup(self._GPIOPinSig2,GPIO.OUT, initial=self._initialStateSig1)
 
-	def turnOnPowerDrive(self, sigvalue):
+	def setPowerDrive(self, sigvalue, value):
 
 		if (sigvalue == 1):
-			GPIO.output(self._GPIOPinSig1, True)
+			GPIO.output(self._GPIOPinSig1, value)
 		if (sigvalue == 2):
-			GPIO.output(self._GPIOPinSig2, True)
-
-	def turnOffPowerDrive(self, sigvalue):
-
-		if (sigvalue == 1):
-			GPIO.output(self._GPIOPinSig1, False)
-		if (sigvalue == 2):
-			GPIO.output(self._GPIOPinSig2, False)
+			GPIO.output(self._GPIOPinSig2, value)
 
 
 
